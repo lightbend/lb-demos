@@ -4,10 +4,12 @@ DroneTrackerApp is a simulated IOT application.  The DroneTracker web service ex
 data to, including temperature and position.  A separate DroneSim application (although within the same codebase)
 simulates independent drones flying around with randomized position and temperature.  The DroneTracker process this
 data stream using [akka-streams](https://doc.akka.io/docs/akka/current/stream/) in a distributed manner using
-[akka-cluster-sharding](https://doc.akka.io/docs/akka/2.5/cluster-sharding.html).  All this is deployed to 
-[Kubernetes](https://kubernetes.io/) with [Lightbend Telemetry](https://developer.lightbend.com/docs/telemetry/current/home.html)
-and [Lightbend Console](https://developer.lightbend.com/docs/console/current/index.html) providing application
-visibility.  This application is built using Java/Maven
+[akka-cluster-sharding](https://doc.akka.io/docs/akka/2.5/cluster-sharding.html).
+[Akka-management](https://developer.lightbend.com/docs/akka-management/current/index.html) is used for cluster bootstrap
+and service discovery.  All this is deployed to [Kubernetes](https://kubernetes.io/) with
+[Lightbend Telemetry](https://developer.lightbend.com/docs/telemetry/current/home.html) and
+[Lightbend Console](https://developer.lightbend.com/docs/console/current/index.html) providing application visibility.
+This application is built using Java/Maven
 
 ### Deployment Architecture 
 ![deployment architecture](./images/deploy_arch.png)
