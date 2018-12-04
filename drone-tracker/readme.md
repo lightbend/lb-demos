@@ -59,7 +59,7 @@ and click 'Load'
 ### Building and Deploying the Application
 
 1. initialize your docker environment.  You can do this from the terminal with `eval $(minikube docker-env)`
-1. from the terminal, build the application with `mvn package docker:build`
+1. from the terminal, build the application with `mvn docker:build`
 1. deploy the DroneTracker into minikube with `kubectl apply -f drone-tracker.yaml`
 1. deploy the DroneSim into minikube with `kubectl apply -f drone-sim.yaml`
 1. open up the Lightbend Console with `minikube service expose-es-console --namespace lightbend`
