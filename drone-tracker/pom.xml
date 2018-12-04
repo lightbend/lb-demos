@@ -11,15 +11,15 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <play2.version>2.6.18</play2.version>
-        <akka.version>2.5.15</akka.version>
+        <play2.version>2.6.20</play2.version>
+        <akka.version>2.5.18</akka.version>
 
         <!-- <akka.management.version>0.17.0</akka.management.version> -->
         <!-- <akka.management.version>0.17.0+11-1a1d6db4</akka.management.version>-->
-        <akka.management.version>0.18.0</akka.management.version>
-        <akka.http.version>10.0.13</akka.http.version>
-        <cinnamon.version>2.10.4</cinnamon.version>
-        <akka.sbr.version>1.1.2</akka.sbr.version>
+        <akka.management.version>0.20.0</akka.management.version>
+        <akka.http.version>10.1.5</akka.http.version>
+        <cinnamon.version>2.10.10</cinnamon.version>
+        <akka.sbr.version>1.1.5</akka.sbr.version>
 
         <!-- Keep the two variables below in sync -->
         <scala.bin.version>2.12</scala.bin.version>
