@@ -13,9 +13,7 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <play2.version>2.6.18</play2.version>
         <akka.version>2.5.15</akka.version>
-
-        <!-- <akka.management.version>0.17.0</akka.management.version> -->
-        <!-- <akka.management.version>0.17.0+11-1a1d6db4</akka.management.version>-->
+        
         <akka.management.version>0.18.0</akka.management.version>
         <akka.http.version>10.0.13</akka.http.version>
         <cinnamon.version>2.10.4</cinnamon.version>
