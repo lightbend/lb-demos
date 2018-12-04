@@ -25,6 +25,8 @@ correctly
 ## Installation Instructions
 
 ### Prerequisites
+- [sbt is installed](https://www.scala-sbt.org/)
+- [jdk 1.8 is installed](https://jdk.java.net/8/)
 - [Docker is installed](https://www.docker.com/community-edition)
 - [minikube running and Lightbend Console installed](https://developer.lightbend.com/docs/console/current/installation/index.html)
 - [you have valid Bintray credentials](https://developer.lightbend.com/docs/reactive-platform/2.0/setup/setup-sbt.html#bintray-credentials) 

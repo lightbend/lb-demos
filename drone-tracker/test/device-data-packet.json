@@ -1,0 +1,8 @@
+{
+  "timestamp":1536383554942,
+  "measurements":[
+    {"timestamp":1536383554942,"temperature":12.0,"location":{"lat":37.7377415,"lon":-122.4310102}},
+    {"timestamp":1536383553942,"temperature":41.0,"location":{"lat":37.7377415,"lon":-122.4310102}},
+    {"timestamp":1536383552942,"temperature":22.0,"location":{"lat":37.7377415,"lon":-122.4310102}}
+  ]
+}
