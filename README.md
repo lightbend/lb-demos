@@ -5,7 +5,7 @@ This repository contains several applications used to demonstrate the utility of
 [Enterprise Suite](https://www.lightbend.com/products/enterprise-suite) for production class concerns, such as
 telemetry and monitoring, fault tolerance, etc.  
 
-##  Lightbend Commecial License
+##  Lightbend Commercial License
 All of these projects will require you to have 
 [Lightbend Credentials](https://www.lightbend.com/product/lightbend-reactive-platform/credentials) through your 
 [developer account](https://www.lightbend.com/account).
