@@ -97,7 +97,7 @@ Now let's see what this looks like with [Lighbend's Split Brain Resolver](https:
 1. edit [minikube-application.conf](./src/main/resources/minikube-application.conf) and uncomment the SBR config section
 1. rebuild and redeploy app
 1. wait for cluster restart on Grafana dashboard
-1. partition the cluster again with `python ../bin/network_tool.py -a shoppingcartapp -s 1 split`
+1. partition the cluster again with `python ../network_tool.py -a shoppingcartapp  -s 1 split`
 1. observe the resultant changes  
     - the `Node Reachability` graph shows that SBR has taken the minority partition down, in accordance to the configured policy
     - the `Shards per Region` graph shows that the data from the downed partition is migrated to the remaining 2 nodes  
