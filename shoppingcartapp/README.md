@@ -85,7 +85,7 @@ This scenario demonstrates how the SBR module recovers the application from a ne
     - on the `Shards per Region` graph, the the shopping cart shards are evenly distributed among 3 nodes
     - on the `Node Reachability` graph, every node in the application sees 3 reachable nodes, which means that the
       akka-cluster is in a converged state
-1. from the terminal, invoke a partition event by running `python ../bin/network_tool.py -a shoppingcartapp -s 1 split`
+1. from the terminal, invoke a partition event by running `python ../network_tool.py -a shoppingcartapp -s 1 split`
 1. observe that the resultant changes on the dashboard
     - the `Node Reachability` graph shows that the cluster is bifurcated into a 2 node parition and a 1 node partition 
     - the `Failed Sessions` graph at the top shows session failures.  This is because depending on which side of the
