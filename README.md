@@ -21,7 +21,7 @@ transaction.  It is a [Scala](https://www.scala-lang.org/)/[sbt](https://www.sca
 [Lightbend Console](https://developer.lightbend.com/docs/console/current/index.html). 
 - [DroneTracker](drone-tracker/readme.md): An IOT web application that processes data from simulated drones in a
 distributed manner,enriching and aggregating the data for later query.  It is a Java/[maven](https://maven.apache.org/)
-project that uses [akka-http](https://doc.akka.io/docs/akka-http/current/), 
+project that uses the [Play Framework](https://www.playframework.com/), 
 [akka-streams](https://doc.akka.io/docs/akka/current/stream/), 
 [akka-cluster](https://doc.akka.io/docs/akka/current/cluster-usage.html), 
 [cluster-sharding](https://doc.akka.io/docs/akka/current/cluster-sharding.html), 
