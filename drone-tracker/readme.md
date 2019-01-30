@@ -30,7 +30,7 @@ controller provides the ability to query the aggregated state directly from the 
   Alternative architectures such as using [kafka](https://kafka.apache.org/) or intermediate message brokering and 
   [spark-streaming](https://spark.apache.org/streaming/) for stateful message processing can have some benefits wrt
   decoupling logical pipelines, replaying data, more efficient network bandwidth usage, etc., although at the cost of
-  higher network complexity.  Both Kafka and Spark are a part of the
+  higher operational and network complexity.  Both Kafka and Spark are a part of the
   [Lightbend Fast Data Platform](https://www.lightbend.com/products/fast-data-platform)
 - The purpose of this demo application is simply to demonstrate how you can flexibly combine different capabilities of
   the Lightbend Technology Platform for a given use case.
