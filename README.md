@@ -1,6 +1,6 @@
 
 # Lightbend Demos
-This repository contains several applications used to demonstrate the utility of of the
+This repository contains several applications used to demonstrate the utility of the
 [Lightbend Reactive Platform](https://www.lightbend.com/products/reactive-platform), and leverages
 [Enterprise Suite](https://www.lightbend.com/products/enterprise-suite) for production class concerns, such as
 telemetry and monitoring, fault tolerance, etc.  
