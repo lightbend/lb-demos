@@ -29,7 +29,7 @@ spec:
       containers:
         - name: shoppingcartapp
           image: "shoppingcartapp:0.1"
-          imagePullPolicy: IfNotPresent
+          imagePullPolicy: Always
           securityContext:
             privileged: true
             allowPrivilegeEscalation: true
