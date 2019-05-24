@@ -16,8 +16,8 @@
 
         <akka.management.version>0.18.0</akka.management.version>
         <akka.http.version>10.0.13</akka.http.version>
-        <cinnamon.version>2.10.4</cinnamon.version>
-        <akka.sbr.version>1.1.2</akka.sbr.version>
+        <cinnamon.version>2.11.1</cinnamon.version>
+        <akka.sbr.version>1.1.9</akka.sbr.version>
 
         <!-- Keep the two variables below in sync -->
         <scala.bin.version>2.12</scala.bin.version>
@@ -163,7 +163,7 @@
         </dependency>
         <dependency>
             <groupId>com.lightbend.cinnamon</groupId>
-            <artifactId>cinnamon-prometheus-httpserver_${scala.bin.version}</artifactId>
+            <artifactId>cinnamon-prometheus-httpserver</artifactId>
             <version>${cinnamon.version}</version>
         </dependency>
         <dependency>
@@ -209,7 +209,7 @@
             <plugin>
                 <groupId>com.google.code.play2-maven-plugin</groupId>
                 <artifactId>play2-maven-plugin</artifactId>
-                <version>1.0.0-rc3</version>
+                <version>1.0.0-rc5</version>
                 <extensions>true</extensions>
                 <configuration>
                     <!-- if using controllers without dependency injection; default value is "injected"
