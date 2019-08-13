@@ -4,9 +4,7 @@ This repository contains several applications used to demonstrate the utility of
 [Lightbend Platform](https://www.lightbend.com/lightbend-platform) for distributed development visibility, and production class concerns, such as telemetry and monitoring, fault tolerance, etc.  
 
 ##  Lightbend Commercial License
-All of these projects will require you to have 
-[Lightbend Credentials](https://www.lightbend.com/product/lightbend-reactive-platform/credentials) through your 
-[developer account](https://www.lightbend.com/account).
+All of these projects will require you to have a [Lightbend Platform Subscription](https://www.lightbend.com/lightbend-platform-subscription) and [configure Bintray credentials](https://developer.lightbend.com/docs/lightbend-platform/introduction/getting-started/subscription-and-credentials.html) on your workstation.
 
 ##  Demo Applications 
 - [ShoppingCartApp](shoppingcartapp/README.md): A shopping cart web service that models client shopping sessions, where 
