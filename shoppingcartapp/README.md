@@ -29,7 +29,7 @@ correctly
 - [jdk 1.8 is installed](https://jdk.java.net/8/)
 - [Docker is installed](https://www.docker.com/community-edition)
 - [minikube running and Lightbend Console installed](https://developer.lightbend.com/docs/console/current/installation/index.html)
-- [you have valid Bintray credentials](https://developer.lightbend.com/docs/reactive-platform/2.0/setup/setup-sbt.html#bintray-credentials) 
+- [you have valid Bintray credentials](https://developer.lightbend.com/docs/lightbend-platform/introduction/getting-started/subscription-and-credentials.html)
 set up on your dev box
 
 ### Installing Custom Metrics Dashboard
@@ -56,8 +56,7 @@ and click 'Load'
 
 ## Demo Scenarios
 
-The following are scenarios to exercise to demonstrate various features of the Lightbend Reactive Platform and
-Enterprise Suite
+The following are scenarios to exercise to demonstrate various features of Lightbend Platform.
 
 ### Pod Failover
 This scenario demonstrates that the application recovers normally after a pod goes down and gets rescheduled by Kubernetes
