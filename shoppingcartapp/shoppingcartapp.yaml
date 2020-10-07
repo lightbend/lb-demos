@@ -1,5 +1,5 @@
 ---
-apiVersion: "apps/v1beta2"
+apiVersion: "apps/v1"
 kind: Deployment
 metadata:
   name: "shoppingcartapp-v0-1"
@@ -29,6 +29,9 @@ spec:
       containers:
         - name: shoppingcartapp
           image: "shoppingcartapp:0.1"
+          # Note: If running on minikube and you published the shoppingcartapp docker image locally then set the
+          # `imagePullPolicy` to `Never` or `IfNotPresent` to avoid image pull errors.
+          # imagePullPolicy: IfNotPresent
           imagePullPolicy: Always
           securityContext:
             privileged: true
