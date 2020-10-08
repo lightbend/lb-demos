@@ -28,10 +28,13 @@ spec:
         fsGroup: 0
       containers:
         - name: shoppingcartapp
+          # Note: pre-pend with your docker registry (if not using dockerhub) and your namespace/username if using a
+          # remote image
+          #image: "seglo/shoppingcartapp:0.1"
           image: "shoppingcartapp:0.1"
           # Note: If running on minikube and you published the shoppingcartapp docker image locally then set the
           # `imagePullPolicy` to `Never` or `IfNotPresent` to avoid image pull errors.
-          # imagePullPolicy: IfNotPresent
+          #imagePullPolicy: Never
           imagePullPolicy: Always
           securityContext:
             privileged: true

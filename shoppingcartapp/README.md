@@ -8,8 +8,8 @@ to cart, query for cart status, and ultimately to commit the cart.  Shopping car
 the [akka cluster](https://doc.akka.io/docs/akka/current/cluster-usage.html) using 
 [akka cluster sharding](https://doc.akka.io/docs/akka/current/cluster-sharding.html). 
 [Cinnamon](https://developer.lightbend.com/docs/cinnamon/current/getting-started/start.html) is used to report cluster 
-telemetry as well as custom business metrics.  Finally, Enterprise Suite Console is used to monitor the application.  You 
-can run the whole setup using [minikube](https://kubernetes.io/docs/setup/minikube/)
+telemetry as well as custom business metrics.  Finally, Console is used to monitor the application.  You 
+can run the whole setup using [minikube](https://kubernetes.io/docs/setup/minikube/) or a K8s platform of your choice.
 
 ![Application Architecture](images/app_arch.png)
 
@@ -47,10 +47,22 @@ and click 'Load'
 
 ### Building and Deploying the Application
 
+#### Minikube
+
 1. initialize your docker environment.  You can do this from the terminal with `eval $(minikube docker-env)`
 1. from the terminal, build the application with `sbt docker:publishLocal`
 1. deploy into minikube with `kubectl apply -f shoppingcartapp.yaml`
 1. open up the Lightbend Console with `minikube service expose-es-console --namespace lightbend`
+
+#### Remote Kubernetes
+
+1. login to a remote docker registry (i.e. dockerhub) `docker login`
+1. in the `build.sbt` update the `dockerUsername` setting to your dockerhub username, or namespace if using a 3rd party registry.
+1. (optional) in the `build.sbt` update `dockerRepository` setting if using a different docker registry.
+1. from the terminal, build and publish the application with `sbt docker:publish`
+1. update the image name in `shoppingcartapp.yaml` to include your registry and username/namespace, if necessary.
+1. deploy to kubernetes with `kubectl apply -f shoppingcartapp.yaml`
+1. create a local HTTP proxy to view Lightbend Console with `kubectl port-forward svc/console-server -n ${CONSOLE_NAMESPACE} 8000:80`
 
 ![shoppingcartapp deployed](./images/console.png)
 
@@ -93,7 +105,7 @@ This scenario demonstrates how the SBR module recovers the application from a ne
 Now let's see what this looks like with [Lighbend's Split Brain Resolver](https://developer.lightbend.com/docs/akka-commercial-addons/current/split-brain-resolver.html) enabled.
   
 1. delete the deployment with `kubectl delete -f shoppingcartapp.yaml`
-1. edit [minikube-application.conf](./src/main/resources/minikube-application.conf) and uncomment the SBR config section
+1. edit [k8s-application.conf](src/main/resources/k8s-application.conf) and uncomment the SBR config section
 1. rebuild and redeploy app
 1. wait for cluster restart on Grafana dashboard
 1. partition the cluster again with `python ../bin/network_tool.py -a shoppingcartapp -s 1 split`
