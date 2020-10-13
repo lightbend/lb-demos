@@ -1518,7 +1518,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": null,
+      "datasource": "Cinnamon Prometheus",
       "fill": 0,
       "gridPos": {
         "h": 5,

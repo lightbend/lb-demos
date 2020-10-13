@@ -1,3 +1,4 @@
+
 name := "shoppingcartapp"
 
 licenses := Seq(("CC0", url("http://creativecommons.org/publicdomain/zero/1.0")))
@@ -43,7 +44,10 @@ lazy val buildSettings = Seq(
 
   parallelExecution in ThisBuild := false,
   parallelExecution in ThisBuild in Test := false,
-  logBuffered in ThisBuild in Test := false
+  logBuffered in ThisBuild in Test := false,
+  // Note: To push the image remotely, define optionally a `dockerRepository`, and a `dockerUsername`
+  //dockerRepository := Some("gcr.io"),
+  //dockerUsername := Some("seglo")
 )
 
 lazy val sharedSettings = Seq(
@@ -70,7 +74,7 @@ lazy val sharedSettings = Seq(
   deployMinikubeAkkaClusterBootstrapContactPoints := 2,
 
   // k8s deployment conf
-  prependRpConf := "minikube-application.conf"
+  prependRpConf := "k8s-application.conf"
 )
 
 lazy val commonSettings = Seq(
